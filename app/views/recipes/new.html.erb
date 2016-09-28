@@ -1,0 +1,33 @@
+<h1>Add a new recipe</h1>
+
+<%= form_tag '/recipes', method: :post do %>
+  <div>
+  <%= label_tag :meat %>
+  <%= text_field_tag :meat %>
+  </div>
+  <div>
+  <%= label_tag :vegetable %>
+  <%= text_field_tag :vegetable %>
+  </div>
+  <div>
+  <%= label_tag :ingredient %>
+  <%= text_field_tag :ingredient %>
+  </div>
+  <div>
+  <%= label_tag :spice %>
+  <%= text_field_tag :spice %>
+  </div>
+  <div>
+  <%= label_tag :measurment %>
+  <%= text_field_tag :measurment %>
+  </div>
+  <div>
+  <%= label_tag :cook_time %>
+  <%= text_field_tag :cook_time %>
+  </div>
+  <div>
+  <%= label_tag :instructions %>
+  <%= text_field_tag :instructions %>
+  </div>
+  <%= submit_tag 'Submit' %>
+<% end %>
